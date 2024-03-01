@@ -1,0 +1,100 @@
+body {
+    background-image: url(img/forest.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+
+
+}
+
+#open {
+
+    position: absolute;
+    top: 70%;
+    left: 8%;
+    width: 350px;
+    height: 80px;
+    font-size: 2rem;
+    transition: .5s;
+    background: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+    box-shadow: 0 0 3px #000;
+    border-radius: 14px;
+
+}
+
+#open:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+#text {
+    text-align: center;
+    margin: 0;
+}
+
+
+
+.modal {
+
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 100px;
+    padding: 10px 20px;
+    border-radius: 19px;
+    font-size: 1.6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    animation: animatemodal;
+    animation-duration: .4s;
+
+
+
+}
+
+.modal .close {
+    font-size: 2.1rem;
+}
+
+.close:hover {
+    cursor: pointer;
+    color: red;
+    font-weight: 800;
+    /* font-size: 3rem; */
+
+}
+
+.modal-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, .3)
+        /* z-index: 1; it puts the everything in the dic above everything */
+
+}
+
+/* Modal Animation */
+
+@keyframes animatemodal {
+    from {
+        top: -500px;
+        opacity: 0;
+
+    }
+
+    to {
+        top: 50%;
+        opacity: 1;
+    }
+}

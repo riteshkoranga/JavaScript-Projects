@@ -1,0 +1,64 @@
+body {
+    background-image: url(img/pexels-pixabay-34514.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    /* background-position: center center;
+    background-size: cover;
+    background-attachment: fixed; */
+    background-size: cover;
+    /* position everything with the width of page */
+    background-size: 100% 100%;
+    background-position: 0% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 40%;
+    height: 250px;
+    background-color: #fff;
+    border-radius: 30px;
+    margin-top: 150px;
+    box-shadow: 0 0 3px;
+}
+
+#timer {
+    width: 100%;
+    font-size: 72px;
+    text-align: center;
+    margin: 0px auto;
+    padding-top: 35px;
+
+}
+
+.buttons {
+    text-align: center;
+    margin-top: 30px;
+}
+
+button {
+    margin: o 10px;
+    border: none;
+
+}
+
+button i {
+    font-size: 1.3rem;
+    padding: 10px;
+    color: #fff;
+    width: 50px;
+}
+
+#play {
+    background-color: green;
+}
+
+#pause {
+    background-color: orange;
+
+}
+
+#reset {
+    background-color: red;
+}

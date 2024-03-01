@@ -1,0 +1,162 @@
+.hiddenContent {
+    display: none;
+}
+
+.hiddenContent.btn {
+    display: block;
+}
+
+body {
+    width: 60%;
+    background-color: burlywood;
+    border: 2px solid black;
+    margin: 25px auto;
+    padding: auto
+}
+
+.container {
+    width: 100%;
+
+    margin-top: 20px;
+}
+
+.todo {
+    max-width: 60%;
+    margin: auto;
+
+    font-size: 33px;
+    text-align: center;
+    color: black;
+}
+
+
+.list {
+    margin: 0px;
+
+}
+
+.Input {
+
+    margin-top: 45px;
+    margin-left: 20px;
+    ;
+
+}
+
+#taskInput {
+    font-size: 20px;
+    margin: 0 15px 0 0;
+    padding: 7px;
+    align-items: center;
+    width: 80%;
+    background-color: darkkhaki;
+    border-radius: 9px;
+    border: none;
+}
+
+#input-btn {
+    width: 20%;
+    display: block;
+    margin: 10px 250px 0 auto;
+
+
+
+    font-size: 20px;
+    padding: 7px;
+
+    background-color: green;
+    align-items: center;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+
+
+
+}
+
+#input-btn:hover {
+    background-color: lightgreen;
+
+}
+
+#DeleteAll {
+
+    min-width: 15%;
+    font-weight: 400;
+
+    margin: 0 150px 10px 150px;
+    padding: 6px;
+    font-size: 16px;
+    background-color: burlywood;
+    border: none;
+    color: #DC143C;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+#DeleteAll:hover {
+    background-color: #DC143C;
+    color: black
+}
+
+.taskList {
+    margin: 20px;
+    display: inline-flexbox;
+    flex: 1 1;
+
+}
+
+.Listcontainer {
+    display: inline-flexbox;
+
+}
+
+ul li {
+
+
+    margin-top: 20px;
+    width: 90%;
+    font-size: 22px;
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 7px;
+    align-items: end;
+
+
+
+
+}
+
+ul li #deletebtn {
+    display: block;
+    margin-right: 0px;
+    margin-left: auto;
+
+    width: 20%;
+
+
+
+    padding: 6px;
+    font-size: 15px;
+    background-color: #DC143C;
+    border: none;
+    color: burlywood;
+
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+ul li #deletebtn:hover {
+    color: black
+}
+
+
+
+@media screen and (min-width: 750px) {
+
+    /* Adjust layout for medium-sized screens */
+    .todo {
+        width: 40%;
+    }
+}
